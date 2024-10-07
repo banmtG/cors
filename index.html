@@ -14,19 +14,11 @@
     const URL_SERVICE=`?name="AD"&pass="123"`;
     const URL=GoogleScriptUrl+URL_SERVICE;
 
-    fetch (URL,{
-            method: 'GET', // or 'POST' depending on your use case
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            mode: 'cors' // Ensure this is set to 'cors' for cross-origin requests
-        })
+    fetch (URL)
         .then (res => res.json())
         .then (data => {
             console.log(data);
-            console.log(JSON.stringify(data))
-        })
-        .catch(error => console.error('Error:', error));
-    
+            console.log(JSON.stringify(data));
+    });
 </script>
 </html>
