@@ -9,14 +9,14 @@
     
 </body>
 <script>
-    const GoogleScriptUrl=`https://script.google.com/macros/s/AKfycbxkCxACbiCnmXbRqqv664RatNdoOG-hSafS8LSIeSdrsBXD92g38k9aKswyslYlUFdPPg/exec`;
+    const GoogleScriptUrl=`https://script.google.com/macros/s/AKfycbzvZVdGLwwUNX6si8HdsRCeeKoZ-vjwqafn4m0XR22UKbEBxmRZ6QmRrChDj0q2otPkEA/exec`;
 
     const URL_SERVICE=`?name="AD"&pass="123"`;
     const URL=GoogleScriptUrl+URL_SERVICE;
 
     fetch (URL, {
             redirect: "follow",
-            method: "POST",
+            method: "GET",
             mode: 'cors',
             headers: {           
             "Content-Type": "text/plain;charset=utf-8",
