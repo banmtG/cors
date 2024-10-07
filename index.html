@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cors testing</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const GoogleScriptUrl=`https://script.google.com/macros/s/AKfycbwePXkkBG9PjYrY8AfO-bdO5aoFUCJlsd65xkfWQNMIQZjij7iwBkT7jG_olaapysBPYw/exec`;
+
+    const URL_SERVICE=`?name="AD"&pass="123"`;
+    const URL=GoogleScriptUrl+URL_SERVICE;
+
+    fetch (URL)
+        .then (res => res.json())
+        .then (data => {
+            console.log(data);
+            console.log(JSON.stringify(data));
+    });
+</script>
+</html>
